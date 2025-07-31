@@ -12,7 +12,7 @@ CHANNEL_ACCESS_TOKEN = os.getenv("CHANNEL_ACCESS_TOKEN")
 CHANNEL_SECRET       = os.getenv("CHANNEL_SECRET")
 CHANNEL_ID           = os.getenv("CHANNEL_ID", "Unknown")
 
-BASE_PATH = '/data'  # ใช้สำหรับ Render
+BASE_PATH = '/tmp/LINEFiles'  # ใช้สำหรับ Render
 PROCESSED_IDS_FILE = os.path.join(BASE_PATH, 'processed_ids.txt')
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
